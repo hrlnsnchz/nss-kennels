@@ -7,6 +7,12 @@ import { EmployeeCard } from "./employee/Employee"
 import { LocationCard } from "./location/Location"
 import { AnimalProvider } from "./animal/AnimalProvider"
 import { AnimalList } from "./animal/AnimalList"
+import { CustomerProvider } from "./customer/CustomerProvider"
+import { CustomerList } from "./customer/CustomerList"
+import { EmployeeProvider } from "./employee/EmployeeProvider"
+import { EmployeeList } from "./employee/EmployeeList"
+import { LocationProvider } from "./location/LocationProvider"
+import { LocationList } from "./location/LocationList"
 
 export const ApplicationViews = () => {
     return (
@@ -22,15 +28,21 @@ export const ApplicationViews = () => {
                     <AnimalList />
                 </Route>
             </AnimalProvider>
-            <Route path="/customers">
-                <CustomerCard />
-            </Route>
-            <Route path="/employees">
-                <EmployeeCard />
-            </Route>
-            <Route path="/locations">
-                <LocationCard />
-            </Route>
+            <CustomerProvider>
+                <Route exact path="/customers">
+                    <CustomerList />
+                </Route>
+            </CustomerProvider>
+            <EmployeeProvider>
+                <Route exact path="/employees">
+                    <EmployeeList />
+                </Route>
+            </EmployeeProvider>
+            <LocationProvider>
+                <Route exact path="/locations">
+                    <LocationList />
+                </Route>
+            </LocationProvider>
         </>
     )
 }
