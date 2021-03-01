@@ -1,12 +1,79 @@
 {
     "animals": [
-        {"id": "1",
-         "name": "Doodles",
-         "address": "200 Main St",
-         "breed": "Poodle",
-         "location" : {
-            "name": "Nashville Kennels North"
+        {
+            "id": "1",
+            "name": "Doodles",
+            "address": "200 Main St",
+            "breed": "Poodle",
+            "locationId": 1
+        },
+        {
+            "id": "2",
+            "name": "Noodles",
+            "address": "200 Main St",
+            "breed": "Poodle",
+            "locationId": 2
+        },
+        {
+            "id": "3",
+            "name": "Froodles",
+            "address": "200 Main St",
+            "breed": "Poodle",
+            "locationId": 1
         }
+    ],
+    "locations" : [
+        {
+            "id": 1,
+            "name": "Nashville Kennels North",
+            "address": "200 Main St"
+        },
+        {
+            "id": 2,
+            "name": "Nashville Kennels South",
+            "address": "2000 Main St"
+        }
+    ],
+    "customers": [
+        {
+            "id": 1,
+            "name": "Hannah Hall",
+            "address": "100 Infinity Way",
+            "animalId": 3
+        },
+        {
+            "id": 2,
+            "name": "Sarah Mall",
+            "address": "101 Infinity Way",
+            "animalId": 1
+        },
+        {
+            "id": 3,
+            "name": "Shonda Mousey",
+            "address": "1000 Infinity Way",
+            "animalId": 2
+        }
+    ],
+    "employees": [
+        {
+            "id": 1,
+            "name": "Jeremy Bakker",
+            "locationId": 2
+        },
+        {
+            "id": 2,
+            "name": "Johnny Bakker",
+            "locationId": 1
+        },
+        {
+            "id": 3,
+            "name": "Tommy Bakker",
+            "locationId": 1
+        },
+        {
+            "id": 4,
+            "name": "Ronny Bakker",
+            "locationId": 2
         }
     ]
 }
