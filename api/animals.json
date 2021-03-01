@@ -1,0 +1,12 @@
+{
+    "animals": [
+        {"id": "1",
+         "name": "Doodles",
+         "address": "200 Main St",
+         "breed": "Poodle",
+         "location" : {
+            "name": "Nashville Kennels North"
+        }
+        }
+    ]
+}
