@@ -5,21 +5,24 @@
             "name": "Doodles",
             "address": "200 Main St",
             "breed": "Poodle",
-            "locationId": 1
+            "locationId": 1,
+            "customerId": 2
         },
         {
             "id": "2",
             "name": "Noodles",
             "address": "200 Main St",
             "breed": "Poodle",
-            "locationId": 2
+            "locationId": 2,
+            "customerId": 1
         },
         {
             "id": "3",
             "name": "Froodles",
             "address": "200 Main St",
             "breed": "Poodle",
-            "locationId": 1
+            "locationId": 1,
+            "customerId": 3
         }
     ],
     "locations" : [
