@@ -1,4 +1,5 @@
 import React, { useContext, useEffect } from "react"
+import { useHistory } from "react-router-dom"
 import { AnimalContext } from "./AnimalProvider"
 import { LocationContext } from "../location/LocationProvider"
 import { CustomerContext } from "../customer/CustomerProvider"
@@ -11,6 +12,8 @@ export const AnimalList = () => {
     const { locations, getLocations } = useContext(LocationContext)
     const { customers, getCustomers } = useContext(CustomerContext)
 
+    const history = useHistory()
+
     useEffect(() => {
         console.log("AnimalList: initial render before data")
         getLocations()
@@ -19,7 +22,8 @@ export const AnimalList = () => {
     }, [])
     return (
         <div className="animals">
-            {console.log("AnimalList: Render", animals)}
+            <h2>Animals</h2>
+            <button onClick={() => {history.push("/animals/create")}}>Add Animal</button>
             {
                 animals.map(animal => {
                     const customer = customers.find(c => c.id === animal.customerId)
