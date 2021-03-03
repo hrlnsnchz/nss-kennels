@@ -66,13 +66,19 @@
       "id": 2,
       "name": "Sarah Mall",
       "address": "101 Infinity Way",
-      "animalId": 1
+      "animalId": 1,
+      "email": "blah@mail.com"
     },
     {
       "id": 3,
       "name": "Shonda Mousey",
       "address": "1000 Infinity Way",
       "animalId": 2
+    },
+    {
+      "email": "doodles11@poodle.com",
+      "name": "doodles poodle",
+      "id": 4
     }
   ],
   "employees": [
