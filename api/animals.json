@@ -47,12 +47,16 @@
     {
       "id": 1,
       "name": "Nashville Kennels North",
-      "address": "200 Main St"
+      "address": "200 Main St",
+      "animalId": 1,
+      "employeeId": 1
     },
     {
       "id": 2,
       "name": "Nashville Kennels South",
-      "address": "2000 Main St"
+      "address": "2000 Main St",
+      "animalId": 2,
+      "employeeId": 1
     }
   ],
   "customers": [
