@@ -2,8 +2,8 @@ import React, { useContext, useEffect, useState } from "react"
 import { LocationContext } from "./LocationProvider"
 import "./Location.css"
 import { useParams, useHistory } from "react-router-dom"
-import { EmployeeContext } from "../employee/EmployeeProvider"
-import { AnimalContext } from "../animal/AnimalProvider"
+// import { EmployeeContext } from "../employee/EmployeeProvider"
+// import { AnimalContext } from "../animal/AnimalProvider"
 
 export const LocationDetail = () => {
   const { getLocationById } = useContext(LocationContext)
