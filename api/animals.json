@@ -29,13 +29,6 @@
       "id": 4
     },
     {
-      "name": "Griffith",
-      "breed": "Cat",
-      "locationId": 1,
-      "customerId": 2,
-      "id": 5
-    },
-    {
       "name": "Rex",
       "breed": "Weiner",
       "locationId": 2,
