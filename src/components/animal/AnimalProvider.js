@@ -39,6 +39,9 @@ export const AnimalProvider = (props) => {
           .then(getAnimals)
       }
 
+    //   Chapter 14:
+    const [ searchTerms, setSearchTerms ] = useState("")
+
     const addAnimal = animalObj => {
         return fetch("http://localhost:8088/animals", {
             method: "POST",
@@ -59,7 +62,7 @@ export const AnimalProvider = (props) => {
     */
     return (
         <AnimalContext.Provider value={{
-            animals, getAnimals, addAnimal, getAnimalById, releaseAnimal, updateAnimal
+            animals, getAnimals, addAnimal, getAnimalById, releaseAnimal, updateAnimal, searchTerms, setSearchTerms
         }}>
             {props.children}
         </AnimalContext.Provider>
